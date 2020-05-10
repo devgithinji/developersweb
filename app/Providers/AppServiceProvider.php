@@ -55,7 +55,7 @@ class AppServiceProvider extends ServiceProvider
             return (new MailMessage())->subject('Account Verification')
                 ->markdown('emails.email_verification',['url'=> $verifyUrl,'name' => $user->name]);
         });
-
+/*
         $mission = PageSetting::find(7);
         $servicesList = Service::all();
         $postsList = Post::latest()->limit(3)->get();
@@ -69,7 +69,7 @@ class AppServiceProvider extends ServiceProvider
 
 
 
-        view()->share(['logoMain'=> $logoMain,'mission' => $mission,'servicesList'=> $servicesList,'postsList'=>$postsList,'maincontactus'=>$maincontactus,'pageImagesList'=>$pageImagesList]);
+        view()->share(['logoMain'=> $logoMain,'mission' => $mission,'servicesList'=> $servicesList,'postsList'=>$postsList,'maincontactus'=>$maincontactus,'pageImagesList'=>$pageImagesList]);*/
 
     }
 }
